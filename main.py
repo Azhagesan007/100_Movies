@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-data = requests.get("https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/")
+data = requests.get(YOUR_URL) #I have used this url https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/
 
 soup = BeautifulSoup(data.text, "html.parser")
 print(soup.prettify())
